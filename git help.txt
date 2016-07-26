@@ -1,0 +1,3 @@
+1.git fetch -> downloadna
+2.git rebase -> fetchic heto esi kgres
+3.
