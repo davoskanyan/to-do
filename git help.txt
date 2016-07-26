@@ -1,3 +1,7 @@
+
 1.git fetch -> downloadna
 2.git rebase -> fetchic heto esi kgres
-3.
+
+3.git add .
+4.git commit -m "message"
+5.git push origin
