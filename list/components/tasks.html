@@ -15,8 +15,10 @@
 	<div id="tasks">
 		<ul>
 			<li *ngFor="let taskItem of notCompletedTaskItems" class="taskItem">
-				<input type="checkbox" class="task-item-checkbox" (click)="toggleCheck(taskItem)"/>
+			<img src="./list/images/X.png" class="delete-task"/>
+				<input type="checkbox" class="task-item-checkbox" (click)="toggleCheck(taskItem)" align="middle"/>
 				<span class="task-item-name">{{taskItem.name}}</span>
+				
 			</li>
 		</ul>
 	</div>
@@ -26,7 +28,8 @@
 	<div id="completedTasks">
 		<ul>
 			<li *ngFor="let taskItem of completedTaskItems" class="completed taskItem">
-				<input type="checkbox" checked class="task-item-checkbox" (click)="toggleCheck(taskItem)"/>
+			<img src="./list/images/X.png" class="deletetask" />
+			<input type="checkbox" checked class="task-item-checkbox" (click)="toggleCheck(taskItem)"/>
 				<del class="task-item-name">{{taskItem.name}}</del>
 			</li>
 		</ul>
