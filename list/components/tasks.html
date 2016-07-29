@@ -28,7 +28,7 @@
 	<div id="completedTasks">
 		<ul>
 			<li *ngFor="let taskItem of completedTaskItems" class="completed taskItem">
-			<img src="./list/images/X.png" class="deletetask" />
+			<img src="./list/images/X.png" class="delete-task" />
 			<input type="checkbox" checked class="task-item-checkbox" (click)="toggleCheck(taskItem)"/>
 				<del class="task-item-name">{{taskItem.name}}</del>
 			</li>
