@@ -1,5 +1,6 @@
 <div id="lists-container">
 	<div id="lists">
+
 		<ul>
 			<li *ngFor="let listItem of listItems"
 			    [class.selected-list]="selectedList && listItem.id == selectedList.id"
@@ -7,10 +8,10 @@
 				<img src="./list/images/list-item.png" class="list-item-image"/>
 				<img src="./list/images/X.png" class="delete-task"/>
 				<span class="list-item-name">{{listItem.name}}</span>
-				
 			</li>
 		</ul>
-	</div>
+		</div>
+	
 	<div id="createList" href="#popup1">
 		<div class="plus-container">
 			<a href="javascript:void(0)" (click)="addNewList(newListElement)">
